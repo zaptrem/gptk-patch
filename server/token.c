@@ -1049,6 +1049,11 @@ const struct sid *token_get_owner( struct token *token )
     return token->owner;
 }
 
+const struct sid *token_get_user( struct token *token )
+{
+    return token->user;
+}
+
 const struct sid *token_get_primary_group( struct token *token )
 {
     return token->primary_group;
